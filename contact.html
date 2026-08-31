@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<meta name="description" content="Contact page for a final-year Electrical/Computer Engineering student.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a class="brand" href="index.html">ALABI ABDULROQEEB<small>Future Computer Engineer</small></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label"><span class="open-icon">MENU&nbsp;☰</span><span class="close-icon">CLOSE&nbsp;✕</span></label>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Contact</p>
+      <h2>Let's talk</h2>
+      <p class="lede-block">Whether it's about a project, an opportunity, or just a technical chat feel free to reach out.</p>
+
+      <div style="display:grid;gap:2.5rem;grid-template-columns:1fr;">
+
+        <div class="table-wrap">
+          <table class="datasheet">
+            <caption>Contact Details</caption>
+            <tbody>
+              <tr><td>Email</td><td class="ed">abdulroqeeb007@gmail.com</td></tr>
+              <tr><td>Phone</td><td class="ed">+234 902 550 4721</td></tr>
+              <tr><td>Location</td><td>Zaria, Kaduna State, Nigeria</td></tr>
+              <tr><td>GitHub</td><td class="ed">github.com/lacapeto</td></tr>
+              <tr><td>LinkedIn</td><td class="ed">linkedin.com/in/lacapeto</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h3>Send a message</h3>
+          <form class="form-grid" action="mailto:you@example.com" method="post" enctype="text/plain">
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="field">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Topic" >
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Describe your message" required></textarea>
+            </div>
+            <div>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>About this site</h4>
+      <p>This site is a Personal portfolio of <span class="ed">ALABI ABDULROQEEB</span>, a final-year Electrical/Computer Engineering student, Ahmadu Bello University, Zaria.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Email: <span class="ed">abdulroqeeb007@gmail.com</span></li>
+        <li>Phone: <span class="ed">+234 902 550 4721</span></li>
+        <li>Location: Zaria, Kaduna State, Nigeria</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-strip">
+    <span>&copy; <span class="ed">2026</span> ALABI ABDULROQEEB. All rights reserved.</span>
+    <span>DEPARTMENT OF COMPUTER ENGINEERING · ABU ZARIA</span>
+  </div>
+</footer>
+
+</body>
+</html>

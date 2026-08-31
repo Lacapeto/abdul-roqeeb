@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+<meta name="description" content="Engineering projects by a final-year Electrical/Computer Engineering student.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a class="brand" href="index.html">ALABI ABDULROQEEB<small>Future Computer Engineer</small></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label"><span class="open-icon">MENU&nbsp;☰</span><span class="close-icon">CLOSE&nbsp;✕</span></label>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Projects</p>
+      <h2>Things I've built</h2>
+      <p class="lede-block">A selection of academic and personal projects spanning embedded systems, robotics, and IoT.</p>
+
+      <div class="chip-grid">
+
+        <article class="ic-card project">
+          <span class="status">Ongoing — Personal Project</span>
+          <h3>Autonomous Vacuum Robot (ASVR)</h3>
+          <div class="pad-placeholder" style="min-height:120px;margin-bottom:.75rem;">
+            <div><img src="assets/images/vacuum-robot.jpg" alt="vacuum_robot"></div>
+          </div>
+          <p>An ESP32-brained, Arduino-Uno-driven vacuum cleaner robot. The ESP32 runs a lightweight HTTP command server that forwards instructions to the Uno over UART, which handles line-following-free obstacle avoidance, dustbin-level monitoring via ultrasonic sensing, and vacuum-motor control through a relay. A dedicated ESP32-CAM streams live video, which a Python script uses to run YOLO-based person detection and tracking for an autonomous "follow-me" mode.</p>
+          <p>Being paired with a custom Flutter mobile app (built in Android Studio) that will provide manual driving controls, a live camera view, and dustbin/battery gauges — replacing an earlier Blynk-based dashboard.</p>
+          <div class="tag-row">
+            <span class="tag">ESP32</span><span class="tag">Arduino Uno</span><span class="tag">C/C++</span>
+            <span class="tag">Python + YOLO</span><span class="tag">Flutter</span><span class="tag">UART / HTTP</span>
+          </div>
+          
+        </article>
+
+        <article class="ic-card project">
+          <span class="status">Academic Project</span>
+          <h3>IoT-Based Smart Wristwatch for Student Vital Signs Monitoring</h3>
+          <div class="pad-placeholder" style="min-height:120px;margin-bottom:.75rem;">
+            <div><img src = "assets/images/vital-signs.jpg" alt="smartwatch"></div>
+          </div>
+          <p>A wearable health-monitoring concept designed for ABU's sick bay. Simulated in Proteus using an ESP32-WROOM microcontroller with a heart-rate sensor, DHT11 temperature/humidity sensor, an OLED display, and LED alerts for abnormal readings.</p>
+          <p>Paired with a companion web dashboard — the "ABU Sick Bay Smart Vital Signs Management System" — featuring Chart.js visualisations, student registration, real-time alert notifications, and a simulation-injection interface for testing.</p>
+          <div class="tag-row">
+            <span class="tag">ESP32-WROOM</span><span class="tag">Proteus</span><span class="tag">Chart.js</span><span class="tag">IoT Dashboard</span>
+          </div>
+        </article>
+
+        <article class="ic-card project">
+          <span class="status">Academic Project</span>
+          <h3>Smart Walking Stick</h3>
+          <p>A mechatronic assistive-device project for a Mechatronics course, simulated fully in Proteus 8. Involved sensor selection (an IR distance sensor for obstacle detection and an SG90 servo as a fold actuator), mathematical modelling, closed-loop control design, and a full technical report — completed with a formal group examination.</p>
+          <div class="tag-row">
+            <span class="tag">Proteus</span><span class="tag">Control Design</span><span class="tag">Servo Actuation</span>
+          </div>
+        </article>
+
+        <article class="ic-card project">
+          <span class="status">Coursework</span>
+          <h3>Embedded Systems &amp; Prototyping Suite</h3>
+          <p>Three complete embedded systems projects developed for a prototyping course, each documented across ten rubric sections covering circuit design, firmware, enclosure specification, and testing:</p>
+          <ul>
+            <li>Smart Automated Irrigation System</li>
+            <li>Patient Vital Signs Monitoring System</li>
+            <li>Adaptive Smart Street Lighting System</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Arduino</span><span class="tag">Sensors</span><span class="tag">Technical Documentation</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>About this site</h4>
+      <p>This site is a Personal portfolio of <span class="ed">ALABI ABDULROQEEB</span>, a final-year Electrical/Computer Engineering student, Ahmadu Bello University, Zaria.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Email: <span class="ed">abdulroqeeb007@gmail.com</span></li>
+        <li>Phone: <span class="ed">+234 902 550 4721</span></li>
+        <li>Location: Zaria, Kaduna State, Nigeria</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-strip">
+    <span>&copy; <span class="ed">2026</span> ALABI ABDULROQEEB. All rights reserved.</span>
+    <span>DEPARTMENT OF COMPUTER ENGINEERING · ABU ZARIA</span>
+  </div>
+</footer>
+
+</body>
+</html>
